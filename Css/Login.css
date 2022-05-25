@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: linear-gradient(180deg, #1EB918 2%, #CFF9F0 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 300px;
+    margin: 200px auto;
+    text-align: center;
+    background-color: greenyellow;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+    background: linear-gradient(360deg, #1EB918 2%, #CFF9F0 100%);
+    
+}
+
+.login {
+    display: inline-block;
+    padding: 0px 100px;
+}
+
+@media (max-width: 800px) {
+    #logo {
+        display: none;
+    }
+}

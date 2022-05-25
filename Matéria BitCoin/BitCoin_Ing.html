@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrencies and Bitcoin, the environmental problem of cryptocurrencies</title>
+    <link rel="icon" type="image/x-icon" href="../Imagens/Favcon.ico">
+    <link rel="stylesheet" href="../Css/PaginaInicial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <a name="topo"></a>
+    <nav>
+        <div class="topo">
+            <a href="../Página Inicial/PaginaInicial_Ing.html">
+                <img src="../Imagens/Logo Dev Help.png" height="135" width="135">
+            </a>
+        </div>
+        <div class="topo">
+            <div class="menu">
+                <a href="BitCoin.html">
+                <button type="button"> <img src="../Imagens/Bandeira do Brasil.jpg" height="20" width="40" /></button></a>
+                <button type="button"> <img src="../Imagens/Bandeira dos EUA.jpg" height="20" width="40" /></button>
+                <a href="BitCoin_Esp.html">
+                <button type="button"> <img src="../Imagens/Bandeira da Espanha.jpg" height="20" width="40" /></button></a>
+            </div>
+            <div class="menu">
+                <button class="botao-newsletter"><strong>Newsletter</strong></button>
+            </div>
+            <div class="fundo-popup">
+                <div class="popup">
+                    <div class="popup-close">x</div>
+                    <div class="conteudo-popup">
+                        <h3>Subscribe to our newsletter:</h3>
+                        <form name="formulario">
+                            <label>Name:</label><input type="text" name="nome" placeholder="Type your name" size="40" maxlength="40" /> <br>
+                            <label>E-mail:</label><input type="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email" name="email" placeholder="Type your email" size="40" maxlength="80" />
+                            <span class="erro-email"></span>
+                        </form> <br>
+                        <button class="assinar-newsletter" onclick="validar()">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="../Bibliografia/Bibliografia_Ing.html">
+                <button class="botao-bibliografia"><strong>Bibliography</strong></button></a>
+            </div>
+        </div>
+        <div class="topo">
+            <ul>
+                <li><a href="javascript://" class="perfil"><img src="../Imagens/Foto de Perfil.png" height="50" width="140"></a></li>
+                <ul class="logout">
+                    <li><a href="../Página de Login/Login.html"><strong>Logout</strong></a></li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br>
+    <h1>Cryptocurrencies and Bitcoin, the environmental problem of cryptocurrencies</h1><br>
+    <div class="foto">
+        <img src="../Imagens/Criptomoedas.jpg" height="400px" width="725px">
+    </div><br>
+    <p class="texto">Created from a 'blockchain' network (a system that allows the sending and receiving of some types of information over the internet,
+        acting as a large database in which pieces of code carry information), cryptocurrencies is a generic name given to
+         digitized and decentralized “mined” coins from advanced cryptographic systems. </p><br>
+    <a class="seta-topo" href="#topo">
+        <img src="../Imagens/Seta.png" height="60px" width="60px">
+    </a>
+    <p class="texto">Unlike currencies such as the Dollar, the Real or the Libra, cryptocurrencies only exist on the internet, and, as much as their veracity is verified,
+        are impossible to physically store. Furthermore, transactions using cryptocurrencies are not mediated by a regulatory organization, being
+         the sole responsibility of the user. <br><br>
+         Because they are “mined”, that is, several “miners” try to find solutions to complex equations in order to validate the data of the
+         blockchain, for this to occur, computers with high processing capacity are needed, larger than common computers;
+          at the same time, energy consumption as well. According to an analysis carried out by the University of Cambridge, in the United Kingdom, currently the
+          cryptocurrency validation and mining consumes about 130.9 terawatts/hour per year, for comparative purposes, the country of Argentina consumes
+          about 125 terawatt hours per year. It is estimated that mining will be responsible for the emission (direct and indirect) of approximately
+          20 million tons of CO2 by 2025. <br><br>
+         Regarding the strong environmental impact that the cryptocurrency represents, together with its great financial potential and the perspective, not only
+          of valorization, but also of investment, alternative forms of use and emissions of energy can be explored in order to alleviate the
+          environmental effects. <br><br>
+          An alternative for the reduction of energy consumed would be renewable energy sources such as wind energy and the
+           physic approximation of energy sources, so there is less energy dissipation because this energy is transmitted over a shorter distance.</p><br><br><br>
+    <aside class="outras-materias">
+        <div class="materias">
+        <br><a href="../Matéria Urnas Eletrônicas/UrnasEletrônicas_Ing.html"><img src="../Imagens/Urna Eletrônica.jpg" width="200px" height="100px">
+        <p><strong>Sustainable democracy: discover how<br> electronic voting machines can contribute<br> to the environment</strong></p></a>
+        <br>
+        <a href="../Matéria Cidades Inteligentes/CidadesInteligentes_Ing.html"><img src="../Imagens/Cidades Inteligentes.jpg" width="200px" height="100px">
+        <p><strong>Sustainability and the smart cities</strong></p></a><br>
+        </div>
+    </aside>
+    <div class="parte-comentarios">
+        <form class="comentarios">
+           <h2><br>Leave a comment</h2>
+           <label>Name:</label><br><input type="text" name="nome-comentario" placeholder="Type your name" size="40" maxlength="40" /><br><br>
+           <label>Email:</label><br><input type="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email" name="email-comentario" placeholder="Type your email" size="40" maxlength="80"/><br><br>
+           <span class="erro-email"></span>
+           <label>Message:</label><br><textarea name="mensagem" placeholder="Type your comment" rows="20" cols="50"></textarea><br><br>
+           <button class="enviar-comentario">Send</button><br><br>
+       </form>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="conteudo-footer">
+                    <img src="../Imagens/Logo Dev Help.png" width="200" height="200">
+                </div>
+                <div class="conteudo-footer">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <h4>Contact: (11) 9123-4567</h4><br>
+                    <h4>©2022 DevHelp | All<br> rights reserved</h4>
+                    <br>
+                </div>
+                <div class="conteudo-footer">
+                    <div class="sobre">
+                    <h2>About us</h2>
+                    <p>The purpose of the DevHelp website is to help make technology users aware of the impacts and benefits
+                        that it may have in relation to the environment. We want to present sustainable solutions for abusive use
+                         technology, and show how it can be used for the benefit of society and the environment.</p>
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <script src="../JavaScript/Páginas_Inglês.js"></script>
+</body>
+</html>

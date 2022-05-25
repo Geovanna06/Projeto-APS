@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustentabilidade e as cidades inteligentes</title>
+    <link rel="icon" type="image/x-icon" href="../Imagens/Favcon.ico">
+    <link rel="stylesheet" href="../Css/PaginaInicial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <a name="topo"></a>
+    <nav>
+        <div class="topo">
+            <a href="../Página Inicial/PaginaInicial.html">
+                <img src="../Imagens/Logo Dev Help.png" height="135" width="135">
+            </a>
+        </div>
+        <div class="topo">
+            <div class="menu">
+                <button type="button"> <img src="../Imagens/Bandeira do Brasil.jpg" height="20" width="40" /></button>
+                <a href="CidadesInteligentes_Ing.html">
+                <button type="button"> <img src="../Imagens/Bandeira dos EUA.jpg" height="20" width="40" /></button></a>
+                <a href="CidadesInteligentes_Esp.html">
+                <button type="button"> <img src="../Imagens/Bandeira da Espanha.jpg" height="20" width="40" /></button></a>
+            </div>
+            <div class="menu">
+                <button class="botao-newsletter"><strong>Newsletter</strong></button>
+            </div>
+            <div class="fundo-popup">
+                <div class="popup">
+                    <div class="popup-close">x</div>
+                    <div class="conteudo-popup">
+                        <h3>Assine nossa newsletter:</h3>
+                        <form name="formulario">
+                            <label>Nome:</label><input type="text" name="nome" placeholder="Digite seu nome" size="40" maxlength="40" /> <br>
+                            <label>E-mail:</label><input type="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email" name="email" placeholder="Digite seu email" size="40" maxlength="80" />
+                            <span class="erro-email"></span>
+                        </form> <br>
+                        <button class="assinar-newsletter" onclick="validar()">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="../Bibliografia/Bibliografia.html">
+                <button class="botao-bibliografia"><strong>Bibliografia</strong></button></a>
+            </div>
+        </div>
+        <div class="topo">
+            <ul>
+                <li><a href="javascript://" class="perfil"><img src="../Imagens/Foto de Perfil.png" height="50" width="140"></a></li>
+                <ul class="logout">
+                    <li><a href="../Página de Login/Login.html"><strong>Logout</strong></a></li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br>
+    <h1>Sustentabilidade e as cidades inteligentes</h1><br>
+    <div class="foto">
+        <img src="../Imagens/Cidades Inteligentes.jpg" height="400px" width="750px">
+    </div><br>
+    <p class="texto">Com o avanço da tecnologia, podemos perceber que as inovações que ela nos traz com o 
+        passar dos anos podem nos surpreender com o como ela é capaz de facilitar nossas vidas de 
+        uma forma rápida e inteligente. E uma dessas inovações, sendo também uma das mais 
+        destacadas nos últimos anos são as Cidades Inteligentes, ou como no inglês, Smart Cities.</p><br>
+    <a class="seta-topo" href="#topo">
+        <img src="../Imagens/Seta.png" height="60px" width="60px">
+    </a>
+    <p class="texto">As Cidades Inteligentes têm como objetivo apoiar o desenvolvimento humano e social, 
+        melhorando a qualidade de vida de seus cidadãos sendo um espaço urbano onde sua 
+        funcionalidade gira em torno de Tecnologias da Informação e da Comunicação (TIC’s), 
+        utilizando sistemas, dispositivos e sensores que são responsáveis pela inteligência dessas 
+        cidades.<br><br>
+        As principais características das Cidades Inteligentes são: o investimento humano; 
+        investimentos sociais e infraestrutura moderna de TIC; esses são os impulsionadores de 
+        crescimento econômico sustentável que aumenta a qualidade de vida e gestão consciente dos 
+        recursos naturais. <br><br>
+        A sustentabilidade e a tecnologia trabalham juntas quando o assunto é 
+        Cidade Inteligente, isso porque uma das principais premissas das Smart Cities é a minimização 
+        dos impactos ambientais. As cidades inteligentes remetem ao conceito de sustentabilidade, 
+        elas têm como o objetivo promover um ambiente de comunidade, onde cada um compartilhe 
+        experiências e serviços. <br><br>
+        Temos como exemplos as Cidades Inteligentes: Londres, Nova York, Amsterdã, Paris e outros. 
+        O Brasil também possui algumas Smart Cities, essas são: Curitiba, Salvador e São Gonçalo do 
+        Amarante.</p><br><br><br>
+    <aside class="outras-materias">
+        <div class="materias">
+        <br><a href="../Matéria BitCoin/BitCoin.html"><img src="../Imagens/Criptomoedas.jpg" width="200px" height="100px">
+        <p><strong>Criptomoedas e Bitcoin,<br> o problema ambiental das criptomoedas</strong></p></a>
+        <br>
+        <a href="../Matéria Urnas Eletrônicas/UrnasEletronicas.html"><img src="../Imagens/Urna Eletrônica.jpg" width="200px" height="100px">
+        <p><strong>Democracia sustentável: descubra como<br> as urnas eletrônicas podem contribuir<br> com o meio ambiente</strong></p></a><br>
+        </div>
+    </aside>
+    <div class="parte-comentarios">
+        <form class="comentarios">
+           <h2><br>Deixe um comentário</h2>
+           <label>Nome:</label><br><input type="text" name="nome-comentario" placeholder="Digite seu nome" size="40" maxlength="40" /><br><br>
+           <label>Email:</label><br><input type="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email" name="email-comentario" placeholder="Digite seu email" size="40" maxlength="80"/><br><br>
+            <span class="erro-email"></span>
+           <label>Mensagem:</label><br><textarea name="mensagem" placeholder="Digite seu comentário" rows="20" cols="50"></textarea><br><br>
+           <button class="enviar-comentario">Enviar</button><br><br>
+       </form>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="conteudo-footer">
+                    <img src="../Imagens/Logo Dev Help.png" width="200" height="200">
+                </div>
+                <div class="conteudo-footer">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <h4>Contato: (11) 9123-4567</h4><br>
+                    <h4>©2022 DevHelp | Todos os<br> direitos reservados</h4>
+                    <br>
+                </div>
+                <div class="conteudo-footer">
+                    <div class="sobre">
+                    <h2>Sobre Nós</h2>
+                    <p>O objetivo do site DevHelp é ajudar a conscientizar os usuários da tecnologia sobre os impactos e os benefícios
+                         que a mesma pode ter em relação ao meio ambiente. Queremos apresentar soluções sustentáveis para o uso abusivo
+                          da tecnologia, e mostrar como ela pode ser usada em prol da sociedade e do meio ambiente.</p>
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <script src="../JavaScript/Páginas_Português.js"></script>
+</body>
+</html>

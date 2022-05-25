@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability and smart cities</title>
+    <link rel="icon" type="image/x-icon" href="../Imagens/Favcon.ico">
+    <link rel="stylesheet" href="../Css/PaginaInicial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <a name="topo"></a>
+    <nav>
+        <div class="topo">
+            <a href="../Página Inicial/PaginaInicial_Ing.html">
+                <img src="../Imagens/Logo Dev Help.png" height="135" width="135">
+            </a>
+        </div>
+        <div class="topo">
+            <div class="menu">
+                <a href="CidadesInteligentes.html">
+                <button type="button"> <img src="../Imagens/Bandeira do Brasil.jpg" height="20" width="40" /></button></a>
+                <button type="button"> <img src="../Imagens/Bandeira dos EUA.jpg" height="20" width="40" /></button>
+                <a href="CidadesInteligentes_Esp.html">
+                <button type="button"> <img src="../Imagens/Bandeira da Espanha.jpg" height="20" width="40" /></button></a>
+            </div>
+            <div class="menu">
+                <button class="botao-newsletter"><strong>Newsletter</strong></button>
+            </div>
+            <div class="fundo-popup">
+                <div class="popup">
+                    <div class="popup-close">x</div>
+                    <div class="conteudo-popup">
+                        <h3>Subscribe to our newsletter:</h3>
+                        <form name="formulario">
+                            <label>Name:</label><input type="text" name="nome" placeholder="Type your name" size="40" maxlength="40" /> <br>
+                            <label>E-mail:</label><input type="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email" name="email" placeholder="Type your email" size="40" maxlength="80" />
+                            <span class="erro-email"></span>
+                        </form> <br>
+                        <button class="assinar-newsletter" onclick="validar()">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="../Bibliografia/Bibliografia_Ing.html">
+                <button class="botao-bibliografia"><strong>Bibliography</strong></button></a>
+            </div>
+        </div>
+        <div class="topo">
+            <ul>
+                <li><a href="javascript://" class="perfil"><img src="../Imagens/Foto de Perfil.png" height="50" width="140"></a></li>
+                <ul class="logout">
+                    <li><a href="../Página de Login/Login.html"><strong>Logout</strong></a></li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br>
+    <h1>Sustainability and smart cities</h1><br>
+    <div class="foto">
+        <img src="../Imagens/Cidades Inteligentes.jpg" height="400px" width="750px">
+    </div><br>
+    <p class="texto">With the advancement of technology, we can see that the innovations it brings to us
+        over the years can surprise us with how it is able to make our lives easier in
+        a quick and smart way. And one of these innovations, being also one of the most
+        highlighted in recent years are the Smart Cities.</p><br>
+    <a class="seta-topo" href="#topo">
+        <img src="../Imagens/Seta.png" height="60px" width="60px">
+    </a>
+    <p class="texto">Smart Cities aim to support human and social development,
+        improving the quality of life of its citizens, being an urban space where their
+        functionality revolves around Information and Communication Technologies (ICTs),
+        using systems, devices and sensors that are responsible for the intelligence of these
+        cities.<br><br>
+        The main characteristics of Smart Cities are: human investment;
+        social investments and modern ICT infrastructure; these are the drivers of
+        sustainable economic growth that increases the quality of life and conscious management of
+        natural resources. <br><br>
+        Sustainability and technology work together when it comes to
+        Smart City, this is because one of the main premises of Smart Cities is the minimization
+        of environmental impacts. Smart cities refer to the concept of sustainability,
+        they aim to promote a community environment, where everyone shares
+        experiences and services. <br><br>
+        Examples include Smart Cities: London, New York, Amsterdam, Paris and others.
+        Brazil also has some Smart Cities, these are: Curitiba, Salvador and São Gonçalo do
+        Amarante.</p><br><br><br>
+    <aside class="outras-materias">
+        <div class="materias">
+        <br><a href="../Matéria BitCoin/BitCoin_Ing.html"><img src="../Imagens/Criptomoedas.jpg" width="200px" height="100px">
+        <p><strong>Cryptocurrencies and Bitcoin,<br> the environmental problem of<br> cryptocurrencies</strong></p></a>
+        <br>
+        <a href="../Matéria Urnas Eletrônicas/UrnasEletrônicas_Ing.html"><img src="../Imagens/Urna Eletrônica.jpg" width="200px" height="100px">
+        <p><strong>Sustainable democracy: discover how<br> electronic voting machines can contribute<br> to the environment</strong></p></a><br>
+        </div>
+    </aside>
+    <div class="parte-comentarios">
+        <form class="comentarios">
+           <h2><br>Leave a comment</h2>
+           <label>Name:</label><br><input type="text" name="nome-comentario" placeholder="Type your name" size="40" maxlength="40" /><br><br>
+           <label>Email:</label><br><input type="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email" name="email-comentario" placeholder="Type your email" size="40" maxlength="80"/><br><br>
+           <span class="erro-email"></span>
+           <label>Message:</label><br><textarea name="mensagem" placeholder="Type your comment" rows="20" cols="50"></textarea><br><br>
+           <button class="enviar-comentario">Send</button><br><br>
+       </form>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="conteudo-footer">
+                    <img src="../Imagens/Logo Dev Help.png" width="200" height="200">
+                </div>
+                <div class="conteudo-footer">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <h4>Contact: (11) 9123-4567</h4><br>
+                    <h4>©2022 DevHelp | All<br> rights reserved</h4>
+                    <br>
+                </div>
+                <div class="conteudo-footer">
+                    <div class="sobre">
+                    <h2>About us</h2>
+                    <p>The purpose of the DevHelp website is to help make technology users aware of the impacts and benefits
+                        that it may have in relation to the environment. We want to present sustainable solutions for abusive use
+                         technology, and show how it can be used for the benefit of society and the environment.</p>
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <script src="../JavaScript/Páginas_Inglês.js"></script>
+</body>
+</html>

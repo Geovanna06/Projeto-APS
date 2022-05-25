@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHelp</title>
+    <link rel="icon" type="image/x-icon" href="../Imagens/Favcon.ico">
+    <link rel="stylesheet" href="../Css/PaginaInicial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="topo">
+            <a href="PaginaInicial.html">
+                <img src="../Imagens/Logo Dev Help.png" height="135" width="135">
+            </a>
+        </div>
+        <div class="topo">
+            <div class="menu">
+                <a href="PaginaInicial.html">
+                <button type="button"> <img src="../Imagens/Bandeira do Brasil.jpg" height="20" width="40" /></button></a>
+                <button type="button"> <img src="../Imagens/Bandeira dos EUA.jpg" height="20" width="40" /></button>
+                <a href="PaginaInicial_Esp.html">
+                <button type="button"> <img src="../Imagens/Bandeira da Espanha.jpg" height="20" width="40" /></button></a>
+            </div>
+            <div class="menu">
+                <button class="botao-newsletter"><strong>Newsletter</strong></button>
+            </div>
+            <div class="fundo-popup">
+                <div class="popup">
+                    <div class="popup-close">x</div>
+                    <div class="conteudo-popup">
+                        <h3>Subscribe to our newsletter:</h3>
+                        <form name="formulario">
+                            <label>Name:</label><input type="text" name="nome" placeholder="Type your name" size="40" maxlength="40" /> <br>
+                            <label>E-mail:</label><input type="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email" name="email" placeholder="Type your email" size="40" maxlength="80" />
+                            <span class="erro-email"></span>
+                        </form> <br>
+                        <button class="assinar-newsletter" onclick="validar()">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="../Bibliografia/Bibliografia_Ing.html">
+                <button class="botao-bibliografia"><strong>Bibliography</strong></button></a>
+            </div>
+        </div>
+        <div class="topo">
+            <ul>
+                <li><a href="javascript://" class="perfil"><img src="../Imagens/Foto de Perfil.png" height="50" width="140"></a></li>
+                <ul class="logout">
+                    <li><a href="../Página de Login/Login.html"><strong>Logout</strong></a></li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+    <div class="carrosselbody">
+        <div class="img-slider">
+            <div class="slide active">
+                <a href="../Matéria Urnas Eletrônicas/UrnasEletrônicas_Ing.html">
+                <img src="../Imagens/urna eletronica.png" alt="">
+                <div class="info">
+                    <h2>Sustainable democracy</h2>
+                    <p>Sustainable democracy: discover how electronic voting machines can contribute to the environment</p>
+                </div>
+                </a>
+            </div>
+            <div class="slide">
+                <a href="../Matéria BitCoin/BitCoin_Ing.html">
+                <img src="../Imagens/criptomoedas.png" alt="">
+                <div class="info">
+                    <h2>Cryptocurrencies and Bitcoin</h2>
+                    <p>Cryptocurrencies and Bitcoin, the environmental problem of cryptocurrencies</p>
+                </div>
+                </a>
+            </div>
+            <div class="slide">
+                <a href="../Matéria Cidades Inteligentes/CidadesInteligentes_Ing.html">
+                <img src="../Imagens/cidades inteligentes.png" alt="">
+                <div class="info">
+                    <h2>Smart cities</h2>
+                    <p>Sustainability and smart cities</p>
+                </div>
+                </a>
+            </div>
+            <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div>
+        </div>
+    
+        <script type="text/javascript">
+            var slides = document.querySelectorAll('.slide');
+            var btns = document.querySelectorAll('.btn');
+            let currentSlide = 1;
+    
+            //Javascript manual navigation
+            var manualNav = function(manual){
+                slides.forEach((slide) => {
+                    slide.classList.remove('active');
+    
+                    btns.forEach((btn) => {
+                        btn.classList.remove('active');
+                    });
+                });
+    
+                slides[manual].classList.add('active');
+                btns[manual].classList.add('active');
+            }
+    
+            btns.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                    manualNav(i);
+                    currentSlide = i;
+                });
+            });
+    
+            //Javascript autoplay
+            var repeat = function(activeClass){
+                let active = document.getElementsByClassName('active');
+                let i = 1;
+    
+                var repeater = () => {
+                    setTimeout(function(){
+                        [...active].forEach((activeSlide) => {
+                            activeSlide.classList.remove('active');
+                        });
+    
+                    slides[i].classList.add('active');
+                    btns[i].classList.add('active');
+                    i++;
+    
+                    if(slides.length == i){
+                        i = 0;
+                    }
+                    if(i >= slides.length){
+                        return;
+                    }
+                    repeater();
+                }, 10000);
+                }
+                repeater();
+            }
+            repeat();
+        </script>
+    
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="conteudo-footer">
+                    <img src="../Imagens/Logo Dev Help.png" width="200" height="200">
+                </div>
+                <div class="conteudo-footer">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <h4>Contact: (11) 9123-4567</h4><br>
+                    <h4>©2022 DevHelp | All<br> rights reserved</h4>
+                    <br>
+                </div>
+                <div class="conteudo-footer">
+                    <div class="sobre">
+                    <h2>About us</h2>
+                    <p>The purpose of the DevHelp website is to help make technology users aware of the impacts and benefits
+                        that it may have in relation to the environment. We want to present sustainable solutions for abusive use
+                         technology, and show how it can be used for the benefit of society and the environment.</p>
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <script src="../JavaScript/Páginas_Inglês.js"></script>
+</body>
+</html>
